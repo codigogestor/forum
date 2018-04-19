@@ -1,0 +1,23 @@
+<div ng-include="'view/_includes/_nav.html'"></div>
+<h2>Tópico > {{topicoTag}} > {{topicoTitle}}</h2>
+<small>Autor: {{topicoAuthor}} em {{topicoDate}}</small>
+<p>{{topicoDescription}}</p>
+
+<hr>
+<h3>Comentários:</h3>
+<div class="form-comentario">
+    <form name="adicionar-comentario">
+        Faça seu comentário:<br>
+         <input type="hidden" name="topico" value="{{topicoId}}" />
+         <input type="text" name="text" />
+         <input type="submit" value="Salvar">
+    </form>
+</div>
+<div class="comentario" ng-repeat="comment in comments">
+    <p id="comentario-{{comment.id}}">
+        <b>{{comment.user_name}}</b> <small>postado em {{comment.created_at}}</small><br>
+        {{comment.text}}<br>
+        <button class="aprovar-comentario" data-id='{{comment.id}}' data-status="aprovado" data-rating="" href="javascript:void(0)">Gostei</button> |
+        <button class="reprovar-comentario" data-id='{{comment.id}}' data-status="reprovado" data-rating="" href="javascript:void(0)">Não gostei</button>
+    </p>
+</div>

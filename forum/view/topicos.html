@@ -1,0 +1,8 @@
+<div ng-include="'view/_includes/_nav.html'"></div>
+<h2>Tópicos</h2>
+<hr>
+<ul class="topicos">
+    <li ng-repeat="x in topicos">
+        <a href="#!topico/{{x.id}}"><span class="tag">#{{x.tag}}</span> {{x.title}} </a>
+    </li>
+</ul>

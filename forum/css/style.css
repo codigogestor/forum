@@ -1,0 +1,22 @@
+html{font-family: Arial, Helvetica, sans-serif;}
+body{margin: 20px 10%;}
+.menu {  background-color: #f0f0f0;}
+.menu ul{padding: 0; display: inline-block; width: 100%;}
+.menu ul li{float: left; list-style: none; padding: 10px 20px; margin: 0 10px; background-color: #dcdada;}
+.menu ul li:last-child{float: right !important;  }
+a {color: black; text-decoration:none; }
+a:hover {color: black; text-decoration: underline; }
+
+ul.topicos{padding: 0;}
+ul.topicos li{padding: 10px;list-style: none;}
+
+input[type=text],select {width: 300px; height: 20px}
+select {width: 300px; height: 30px}
+textarea {width: 300px; height: 50px}
+input,select,textarea {margin: 20px 0; }
+
+.login, .cadastro{    float: left;}
+.login{margin-right: 30px;}
+
+.header-title{background-color: #dcdada; padding: 10px;}
+.tag{background: #2e4f84; color: #fff; padding: 5px; font-size: 14px;}

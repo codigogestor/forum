@@ -1,0 +1,22 @@
+<div ng-include="'view/_includes/_nav.html'"></div>
+<h2>Novo tópico</h2>
+<hr>
+<div>
+    <form name="adicionar-topico">
+        Categoria:<br>
+        <select name="tag">
+            <option value="Ruby on Rails">Ruby on Rails</option>
+            <option value="Javascript">Javascript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+        <br>
+        Título:<br>
+        <input type="text" name="title" value="">
+        <br>
+        Descrição:<br>
+        <textarea  name="description" rows="5"></textarea>
+        <br><br>
+        <input type="submit" value="Salvar">
+    </form>
+</div>
